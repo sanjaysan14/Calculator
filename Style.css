@@ -1,0 +1,99 @@
+body{
+    background-image: url(./backimg.png);
+    /* object-fit: cover; */
+  justify-content: center;
+    /* background-repeat: no-repeat; */
+}
+.calculator {
+    width: 300px;
+    margin: 50px auto;
+    border-radius: 20px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.308);
+    -webkit-backdrop-filter: blur(11px);
+    backdrop-filter: blur(11px);
+   
+
+}
+
+#display {
+    width: calc(100% - 40px);
+    padding: 15px;
+    margin-bottom: 15px;
+    font-size: 24px;
+    text-align: right;
+    color: #fff;
+    border: 3px solid rgba(229, 225, 225, 0.84);
+    border-radius: 10px;
+    background-color: #1b1c1d72;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+button {
+    padding: 20px;
+    font-size: 20px;
+    border: none;
+    border-radius: 10px;
+    background-color: #2ecc71;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background-color: #27ae60;
+}
+
+button.operator {
+    background-color: #3498db;
+}
+
+button.operator:hover {
+    background-color: #2980b9;
+}
+
+button.clear {
+    background-color: #e74c3c;
+}
+
+button.clear:hover {
+    background-color: #c0392b;
+}
+
+button.equal {
+    grid-column: span 2;
+    background-color: #9b59b6;
+}
+
+button.equal:hover {
+    background-color: #8e44ad;
+}
+
+
+.Social{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.icon{
+    font-size: 30px;
+    color: linear-gradient(135deg, #833ab4, #fd1d1d);
+}
+
+.icon img {
+    width: 24px; /* Adjust width and height as needed */
+    height: 25px;
+    margin-right: 10px;
+    border-radius: 20%; /* Optional: To make the image round */
+}
+a{
+    text-decoration: none;
+    font-family: sans-serif ;
+}
